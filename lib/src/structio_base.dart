@@ -33,3 +33,13 @@ String getWhitespaceDepth(int n,
   result += suffix;
   return result;
 }
+
+bool hasMatched(elementPath, ignoreList) {
+  bool match = false;
+  ignoreList.toList().forEach((pattern) {
+    if (pattern.hasMatch(elementPath)) {
+      match = true;
+    }
+  });
+  return match;
+}

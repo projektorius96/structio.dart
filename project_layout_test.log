@@ -1,0 +1,16 @@
+structio\
+        \.gitignore
+        \analysis_options.yaml
+        \CHANGELOG.md
+        \project_layout_test.log
+        \pubspec.lock
+        \pubspec.yaml
+        \README.md
+.\bin\
+     \main.dart
+.\lib\
+     \export.dart
+.\lib\src\
+         \structio_base.dart
+.\tests\
+       \ignorefiles.dart
