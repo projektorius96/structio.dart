@@ -29,11 +29,9 @@ void main(List<String> args) async {
         count++;
       }
       var splitResult = [...dir.path.split(sep)].shift();
-      if (splitResult.length > 1) {
-        print(
+      splitResult.length > 1 ? false : print(
             "${getWhitespaceDepth(rootNamespace.length - 1)}$sep${splitResult[0]}"
-        );
-      }
+      );
     });
   });
   subrootDir.toList().forEach((FileSystemEntity dir) {
